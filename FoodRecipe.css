@@ -1,3 +1,63 @@
+/* Ensure the page takes full height */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Content area that adjusts based on items */
+.content {
+    flex-grow: 1;  /* Content will grow and fill space */
+    padding: 20px;
+}
+
+/* Card items (you can style them however you need) */
+.card {
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f8f9fa;
+}
+
+/* Footer styling */
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background-color: #333333; /* Dark background */
+    border-top: 1px solid #444444; /* Subtle border */
+    font-family: Arial, sans-serif;
+    position: relative;
+    bottom: 0;
+    margin-top: auto; /* This ensures footer stays at the bottom */
+}
+
+/* Footer text styling */
+footer p {
+    margin: 0;
+    font-size: 14px;
+    color: #ffffff; /* White text */
+}
+
+/* Footer link styling */
+footer a {
+    color: #ff9800; /* Bright accent color for links */
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* Hover effect on links */
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Smaller footer text for secondary info */
+footer p:nth-of-type(2) {
+    font-size: 12px;
+    color: #bbbbbb; /* Lighter gray for secondary text */
+}
+
 *{
     margin: 0;
     padding: 0;
