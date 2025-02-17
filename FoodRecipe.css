@@ -265,7 +265,7 @@ body::-webkit-scrollbar-track{
 }
 
  /* Responsive Code */
-@media screen and (max-width:640px) {
+/* @media screen and (max-width:640px) {
     header nav{
         flex-direction: column;
     }
@@ -278,7 +278,59 @@ body::-webkit-scrollbar-track{
     .category input{
         width: 75px;
     }
+} */
+
+/* Responsive design for Food Recipe website */
+
+/* Add this CSS to your existing stylesheet or in a new CSS file */
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .recipe-container {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+  header nav h1 {
+    margin-right: 500px;
+  }
 }
+
+@media (max-width: 768px) {
+  header nav {
+    flex-direction: column;
+  }
+  header nav h1 {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .category {
+    width: 100%;
+  }
+  .dishs input {
+    width: 80px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .recipe {
+    max-width: 100%;
+  }
+  .recipe-details {
+    width: 90%;
+    height: 70%;
+  }
+  form input[type="text"], button[type="submit"] {
+    font-size: 14px;
+  }
+  .dishs input {
+    width: 60px;
+    font-size: 14px;
+  }
+  #nextBtn, #prevBtn {
+    font-size: 20px;
+  }
+}
+
 
 
 
