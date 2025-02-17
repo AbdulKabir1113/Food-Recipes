@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodRecipe</title>
+    <link rel="stylesheet" href="FoodRecipe.css">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Catamaran:wght@200&family=Courgette&family=Dancing+Script:wght@700&family=Edu+TAS+Beginner:wght@700&family=Lato:wght@300;900&family=Mukta:wght@700&family=Mulish:wght@300&family=Open+Sans&family=PT+Sans:ital,wght@1,700&family=Poppins:wght@300&family=Raleway:wght@100&family=Roboto&family=Roboto+Condensed:wght@700&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Recipe App</h1>
+            <form>
+                <input type="text" placeholder="Search for Recipe..." class="searchBox">
+                <button type="submit" class="searchBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+        </nav>
+    </header>
+        <!-- <nav>
+            <form>
+                <input type="text" placeholder="Search for Recipe..." class="searchBox">
+                <button type="submit" class="searchBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+        </nav>
+    </header> -->
+    <!--  -->
+    <div class="category">
+        <button id="prevBtn"><i class="fa-solid fa-angle-left"></i></button>
+
+        <div class="dishs">
+            <input type="button" class="dishVal" value="Cake">
+            <input type="button" class="dishVal" value="Biryani">
+            <input type="button" class="dishVal" value="Cream"> 
+
+        </div>
+        <div class="dishs">
+            <input type="button" class="dishVal" value="Chicken">
+            <input type="button" class="dishVal" value="Biryani">
+            <input type="button" class="dishVal" value="Ice cream">
+
+        </div>
+        <div class="dishs">
+            <input type="button" class="dishVal" value="Salad">
+            <input type="button" class="dishVal" value="Samosa">
+            <input type="button" class="dishVal" value="Banana">
+
+        </div>
+        <button id="nextBtn"><i class="fa-solid fa-angle-right"></i></button>
+    </div>
+
+
+    <!--  -->
+
+    <main>
+        <section>
+            <div class="recipe-container">
+                <h2>Search Your Favourite Recipes...</h2>
+            </div>
+
+            <div class="recipe-details">
+                <button type="button" class="recipe-close-btn">
+                    <i class="fas fa-times"></i>
+                </button>
+
+                <div class="recipe-details-content">
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="FoodRecipe.js"></script>
+</body>
+</html>
